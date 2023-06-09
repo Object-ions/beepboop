@@ -6,11 +6,11 @@ function beepBoop(input) {
     arrNumbers[i] = (i);
 
     if (arrNumbers[i] === 1) {
-      arrNumbers[i] = "BEEP";
+      arrNumbers[i] = "Beep!";
     } else if (arrNumbers[i] === 2) {
-      arrNumbers[i] = "BOOP";
+      arrNumbers[i] = "Boop!";
     } else if (arrNumbers[i] === 3) {
-      arrNumbers[i] = "NEIGHBOR";
+      arrNumbers[i] = "neighbor?";
     };
   };
 
