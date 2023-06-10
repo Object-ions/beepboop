@@ -15,10 +15,13 @@ function beepBoop(input) {
     };
   };
 
+  arrNumbers.forEach(function numbersToDigits(number) {
+    arrDigits = number.split(" ")
+    console.log("arrDigits: " + arrDigits);
+    console.log(number, i);
+  });
+
   console.log(arrNumbers);
+  numbersToDigits();
 }
 
-function numbersToDigits(arrNumbers) {
-  arrDigits = arrNumbers.split('');
-  console.log(arrDigits);
-}
