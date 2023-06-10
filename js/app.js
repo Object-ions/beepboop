@@ -1,4 +1,7 @@
-let input;
+let form = document.getElementById('form');
+let input = document.getElementById('input');
+let output = document.getElementById('output');
+
 let arrDigits = [];
 function beepBoop(input) {
 
