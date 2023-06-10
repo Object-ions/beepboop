@@ -15,17 +15,42 @@ function beepBoop(input) {
       arrNumbers[i] = 'neighbor?';
     };
   };
-  console.log(arrNumbers);
+  // console.log(arrNumbers);
 
-  // arrNumbers.forEach(function numbersToDigits(number) {
-  //   arrDigits = number.split('')
-  // });
-
-  // console.log(arrDigits);
 }
+
+let outputString = "";
+
+// arrNumbers.forEach(function numbersToDigits(number) {
+//   console.log("the number: " + number);
+//   arrDigits = number.split("");
+//   console.log("the number after split: " + arrDigits);
+
+//   outputString = outputString + beepBoop(input) + "  ";
+// });
+
+let arrRunningNumbers = [];
+
+
+function runningNumbers(input) {
+  for (let i = 0; i <= input; i++) {
+    arrRunningNumbers[i] = i;
+  }
+  console.log(arrRunningNumbers);
+}
+
+
 function numbersToDigits(number) {
-  console.log(number);
+  console.log("the number: " + number);
   arrDigits = number.split("");
+  console.log("the number after split: " + arrDigits);
 
-  console.log(arrDigits);
+  outputString = outputString + beepBoop(input) + "  ";
 }
+
+function replaceIncidents(arrNumbers) {
+
+
+}
+
+
