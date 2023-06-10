@@ -8,12 +8,12 @@ function beepBoop(input) {
   for (let i = 0; i <= input; i++) {
     arrDigits[i] = i.toString();
 
-    if (arrDigits[16][16][i] === '3') {
-      arrDigits[16][i] = 'neighbor?';
-    } else if (arrDigits[16][i] === '2') {
-      arrDigits[16][i] = 'Boop!';
-    } else if (arrDigits[16][i] === '1') {
-      arrDigits[16][i] = 'Beep';
+    if (arrDigits[i].includes('3')) {
+      arrDigits[i] = 'neighbor?';
+    } else if (arrDigits[i].includes('2')) {
+      arrDigits[i] = 'Boop!';
+    } else if (arrDigits[i].includes('1')) {
+      arrDigits[i] = 'Beep';
     };
   };
   console.log(arrDigits);
