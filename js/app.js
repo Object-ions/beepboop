@@ -4,6 +4,7 @@ let arrDigits = [];
 let arrRunningNumbers = [];
 function beepBoop(input) {
 
+  // working
   for (let i = 0; i <= input; i++) {
     arrNumbers[i] = i.toString();
 
@@ -19,22 +20,6 @@ function beepBoop(input) {
 
 }
 
-let outputString = "";
-
-function try () {
-  arrRunningNumbers.forEach(function numbersToDigits(number) {
-    console.log("the number: " + number);
-    arrDigits = arrDigits.toString();
-    arrDigits = number.split("");
-    console.log("the number after split: " + arrDigits);
-
-
-  });
-}
-
-
-
-
 function runningNumbers(input) {
   for (let i = 0; i <= input; i++) {
     arrRunningNumbers[i] = i;
@@ -42,6 +27,24 @@ function runningNumbers(input) {
 
   console.log(arrRunningNumbers);
 }
+
+// not working
+
+function different() {
+  arrRunningNumbers.forEach(function numbersToDigits(number) {
+    console.log("the number: " + number);
+    arrDigits = arrDigits.toString();
+    arrDigits = number.split("");
+    console.log("the number after split: " + arrDigits)
+  });
+}
+
+
+
+
+
+
+
 
 
 function numbersToDigits(number) {
