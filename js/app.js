@@ -10,23 +10,25 @@ function beepBoop(input) {
     arrDigits[i] = i.toString();
 
     if (arrDigits[i].includes('3')) {
-      arrDigits[i] = 'neighbor?';
+      arrDigits[i] = '\"Won\'t you be my neighbor?\"';
     } else if (arrDigits[i].includes('2')) {
-      arrDigits[i] = 'Boop!';
+      arrDigits[i] = '\"Boop!\"';
     } else if (arrDigits[i].includes('1')) {
-      arrDigits[i] = 'Beep';
+      arrDigits[i] = '\"Beep\"';
     };
   };
-  console.log(arrDigits);
-  output.innerText = arrDigits;
-  displayDiv.removeAttribute('class')
+
+  console.log(arrDigits.join(', '));
+  output.innerText = arrDigits.join(', ');
+  displayDiv.classList.remove('hidden');
+  input.value = null;
 
 };
 
 form.addEventListener('submit', function getInput(event) {
   event.preventDefault();
   input = document.getElementById('input').value
-  console.log(input);
+
   beepBoop(input);
 });
 
