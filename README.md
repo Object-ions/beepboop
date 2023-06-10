@@ -20,3 +20,7 @@ Expected Output: 0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5
 Test: It should take string output and showcase its value in the <p> #input and remove the 'hidden' class.
 Code: 
 Expected Output: <div id="display-div" class="inside-form">
+
+Test: It should pop an error message if submitted without setting a number.
+Code: 
+Expected Output: error message.

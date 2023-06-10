@@ -16,9 +16,12 @@ form.addEventListener('submit', function getInput(event) {
 // Buisness Logic:
 function beepBoop(input) {
 
-  if (input === null) {
-    console.log("error");
+  if (input === null || input === NaN || input === '') {
+    error = document.getElementById('error');
+    error.classList.remove('hidden');
+
   } else {
+
     arrDigits = [];
     for (let i = 0; i <= input; i++) {
       arrDigits[i] = i.toString();
@@ -33,6 +36,7 @@ function beepBoop(input) {
     };
 
     output.innerText = arrDigits.join(', ');
+    error.classList.add('hidden');
     displayDiv.classList.remove('hidden');
     document.getElementById('input').value = null;
   }
