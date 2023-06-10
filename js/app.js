@@ -8,15 +8,15 @@ function beepBoop(input) {
   for (let i = 0; i <= input; i++) {
     arrDigits[i] = i.toString();
 
-    if (arrDigits[i] === '3') {
-      arrDigits[i] = 'neighbor?';
-    } else if (arrDigits[i] === '2') {
-      arrDigits[i] = 'Boop!';
-    } else if (arrDigits[i] === '1') {
-      arrDigits[i] = 'Beep';
+    if (arrDigits[16][16][i] === '3') {
+      arrDigits[16][i] = 'neighbor?';
+    } else if (arrDigits[16][i] === '2') {
+      arrDigits[16][i] = 'Boop!';
+    } else if (arrDigits[16][i] === '1') {
+      arrDigits[16][i] = 'Beep';
     };
   };
-  // console.log(arrNumbers);
+  console.log(arrDigits);
 
 }
 
@@ -34,12 +34,6 @@ function numbersToDigits() {
     arrDigits.push(digits)
     console.log("the number after split: " + digits)
   });
-}
-
-
-function replaceIncidents(arrNumbers) {
-
-
 }
 
 
