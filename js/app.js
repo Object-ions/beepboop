@@ -1,7 +1,5 @@
 let input;
-let arrNumbers = [];
 let arrDigits = [];
-let arrRunningNumbers = [];
 function beepBoop(input) {
 
   // working
@@ -18,22 +16,6 @@ function beepBoop(input) {
   };
   console.log(arrDigits);
 
-}
-
-function runningNumbers(input) {
-  for (let i = 0; i <= input; i++) {
-    arrRunningNumbers[i] = i;
-  }
-
-  console.log(arrRunningNumbers);
-}
-
-function numbersToDigits() {
-  arrRunningNumbers.forEach(function (number) {
-    let digits = String(number).split('');
-    arrDigits.push(digits)
-    console.log("the number after split: " + digits)
-  });
 }
 
 

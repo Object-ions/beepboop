@@ -25,12 +25,3 @@ Test: It should replace 1 with the text "beep", 2 with "BOOP" and 3 with "NEIGHB
 Code: beepBoop(5);
 Expected Output: [0, 'BEEP', 'BOOP', 'NEIGHBOR', 4, 5]
 
-Describe: numbersToDigits()
-Test: It should break the array into another array
-Code: beepBoop("15");
-Expected Output: ['1', '5']
-
-Test: turn the array back to numbers
-Code: beepBoop(15);
-Expected Output: [1, 5]
-
