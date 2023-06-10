@@ -17,11 +17,14 @@ function beepBoop(input) {
   };
   console.log(arrNumbers);
 
-  let outputString = "";
-  arrNumbers.forEach(function numbersToDigits(number) {
-    arrDigits = number.split('')
-  });
+  // let outputString = "";
+  // arrNumbers.forEach(function numbersToDigits(number) {
+  //   arrDigits = number.split('')
+  // });
 
-  console.log(arrDigits);
+  // console.log(arrDigits);
 }
 
+function numbersToDigits(number) {
+  arrDigits = number.split('')
+}
