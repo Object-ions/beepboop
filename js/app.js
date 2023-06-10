@@ -5,6 +5,15 @@ let displayDiv = document.getElementById('display-div');
 let output = document.getElementById('output');
 let form = document.getElementById('form');
 
+// User Interface Logic:
+form.addEventListener('submit', function getInput(event) {
+  event.preventDefault();
+  input = document.getElementById('input').value
+
+  beepBoop(input);
+});
+
+// Buisness Logic:
 function beepBoop(input) {
   for (let i = 0; i <= input; i++) {
     arrDigits[i] = i.toString();
@@ -18,17 +27,8 @@ function beepBoop(input) {
     };
   };
 
-  console.log(arrDigits.join(', '));
   output.innerText = arrDigits.join(', ');
   displayDiv.classList.remove('hidden');
-  input.value = null;
+  document.getElementById('input').value = null;
 
 };
-
-form.addEventListener('submit', function getInput(event) {
-  event.preventDefault();
-  input = document.getElementById('input').value
-
-  beepBoop(input);
-});
-
