@@ -1,4 +1,4 @@
-let form = document.getElementById('form');
+let form = document.getElementById('form').value;
 let input = document.getElementById('input');
 let output = document.getElementById('output');
 
@@ -21,4 +21,8 @@ function beepBoop(input) {
 
 }
 
+form.addEventListener('submit', function getInput(event) {
+  event.preventDefault();
+  console.log(input);
+})
 
