@@ -6,14 +6,14 @@ function beepBoop(input) {
 
   // working
   for (let i = 0; i <= input; i++) {
-    arrNumbers[i] = i.toString();
+    arrDigits[i] = i.toString();
 
-    if (arrNumbers[i] === '1') {
-      arrNumbers[i] = 'Beep!';
-    } else if (arrNumbers[i] === '2') {
-      arrNumbers[i] = 'Boop!';
-    } else if (arrNumbers[i] === '3') {
-      arrNumbers[i] = 'neighbor?';
+    if (arrDigits[i] === '3') {
+      arrDigits[i] = 'neighbor?';
+    } else if (arrDigits[i] === '2') {
+      arrDigits[i] = 'Boop!';
+    } else if (arrDigits[i] === '1') {
+      arrDigits[i] = 'Beep';
     };
   };
   // console.log(arrNumbers);
@@ -28,32 +28,14 @@ function runningNumbers(input) {
   console.log(arrRunningNumbers);
 }
 
-// not working
-
-function different() {
-  arrRunningNumbers.forEach(function numbersToDigits(number) {
-    console.log("the number: " + number);
-    arrDigits = arrDigits.toString();
-    arrDigits = number.split("");
-    console.log("the number after split: " + arrDigits)
+function numbersToDigits() {
+  arrRunningNumbers.forEach(function (number) {
+    let digits = String(number).split('');
+    arrDigits.push(digits)
+    console.log("the number after split: " + digits)
   });
 }
 
-
-
-
-
-
-
-
-
-function numbersToDigits(number) {
-
-  console.log("the number: " + number);
-  arrDigits = number.split(",");
-  console.log("the number after split: " + arrDigits);
-
-}
 
 function replaceIncidents(arrNumbers) {
 
