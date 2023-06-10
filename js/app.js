@@ -15,6 +15,7 @@ form.addEventListener('submit', function getInput(event) {
 
 // Buisness Logic:
 function beepBoop(input) {
+  arrDigits = [];
   for (let i = 0; i <= input; i++) {
     arrDigits[i] = i.toString();
 
