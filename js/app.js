@@ -4,7 +4,10 @@ let arrDigits = [];
 let displayDiv = document.getElementById('display-div');
 let output = document.getElementById('output');
 let form = document.getElementById('form');
-let reverse = document.getElementById("reverse");
+let reverseButton = document.getElementById("reverse");
+let reverseDisplayDiv = document.getElementById('reverse-div');
+let outputReverse = document.getElementById('outputReverse');
+reverseButton.onclick = reverseClick;
 
 // User Interface Logic:
 form.addEventListener('submit', function getInput(event) {
@@ -15,10 +18,9 @@ form.addEventListener('submit', function getInput(event) {
 });
 
 function reverseClick() {
-  console.log("reverse clicked!");
+  reverseDisplayDiv.classList.remove('hidden');
+  outputReverse.innerText = arrDigits.reverse();
 }
-
-reverse.onclick = reverseClick;
 
 // Buisness Logic:
 function beepBoop(input) {
