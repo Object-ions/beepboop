@@ -1,13 +1,13 @@
 
 let input;
 let arrDigits = [];
+let reverseArrDigits = [];
 let displayDiv = document.getElementById('display-div');
 let output = document.getElementById('output');
 let form = document.getElementById('form');
 let reverseButton = document.getElementById("reverse");
 let reverseDisplayDiv = document.getElementById('reverse-div');
 let outputReverse = document.getElementById('outputReverse');
-reverseButton.onclick = reverseClick;
 
 // User Interface Logic:
 form.addEventListener('submit', function getInput(event) {
@@ -15,11 +15,15 @@ form.addEventListener('submit', function getInput(event) {
   input = document.getElementById('input').value
 
   beepBoop(input);
+
 });
 
+reverseButton.onclick = reverseClick;
 function reverseClick() {
+  reverseArrDigits = arrDigits.reverse()
+  outputReverse.innerText = reverseArrDigits;
   reverseDisplayDiv.classList.remove('hidden');
-  outputReverse.innerText = arrDigits.reverse();
+
 }
 
 // Buisness Logic:
@@ -48,6 +52,9 @@ function beepBoop(input) {
     error.classList.add('hidden');
     displayDiv.classList.remove('hidden');
     document.getElementById('input').value = null;
+
+
+
   }
 
 };
