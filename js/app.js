@@ -4,6 +4,7 @@ let arrDigits = [];
 let displayDiv = document.getElementById('display-div');
 let output = document.getElementById('output');
 let form = document.getElementById('form');
+let reverse = document.getElementById("reverse");
 
 // User Interface Logic:
 form.addEventListener('submit', function getInput(event) {
@@ -12,6 +13,12 @@ form.addEventListener('submit', function getInput(event) {
 
   beepBoop(input);
 });
+
+function reverseClick() {
+  console.log("reverse clicked!");
+}
+
+reverse.onclick = reverseClick;
 
 // Buisness Logic:
 function beepBoop(input) {
