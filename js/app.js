@@ -1,13 +1,13 @@
 
 let input;
 let arrDigits = [];
-let reverseArrDigits = [];
 let displayDiv = document.getElementById('display-div');
 let output = document.getElementById('output');
 let form = document.getElementById('form');
-let reverseButton = document.getElementById("reverse");
+let reverseButton = document.getElementById("reverse-button");
 let reverseDisplayDiv = document.getElementById('reverse-div');
 let outputReverse = document.getElementById('outputReverse');
+let h3Reverse = document.querySelector('div#reverse-div h3');
 
 // User Interface Logic:
 form.addEventListener('submit', function getInput(event) {
@@ -20,9 +20,9 @@ form.addEventListener('submit', function getInput(event) {
 
 reverseButton.onclick = reverseClick;
 function reverseClick() {
-  reverseArrDigits = arrDigits.reverse()
-  outputReverse.innerText = reverseArrDigits;
-  reverseDisplayDiv.classList.remove('hidden');
+  outputReverse.innerText = arrDigits.reverse();
+  h3Reverse.classList.remove('hidden');
+  outputReverse.classList.remove('hidden');
 
 }
 
@@ -52,6 +52,7 @@ function beepBoop(input) {
     error.classList.add('hidden');
     displayDiv.classList.remove('hidden');
     document.getElementById('input').value = null;
+    reverseButton.classList.remove('hidden');
 
 
 

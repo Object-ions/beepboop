@@ -1,26 +1,62 @@
-TDD:
+# _Mr. Roboger's Neighborhood_
 
-Describe: beepBoop()
-Test: It should return an array of numbers from 0 to the user's inputted number.
-Code: beepBoop(5);
-Expected Output: [0, 1, 2, 3, 4, 5]
+#### By **Moshe Atia Poston**
 
-Test: It should take output and convert it from an array of numbers to a string
-Code: getInput(5);
-Expected Output: ['0', '1', '2', '3', '4', '5']
+ This project is an interactive web application that involves receiving an input from the user (number) and returning a list of values displayed.
 
-Test: It should replace the string 1 with the text "BEEP", replace the string 2 with "BOOP" and replace the string 3 with "NEIGHBOR".
-Code: beepBoop(5);
-Expected Output: ['0', 'BEEP', 'BOOP', 'NEIGHBOR', '4', '5']
 
-Test: It should take arry output and combine it into a single string using a " ," to join.
-Code: 
-Expected Output: 0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5
+_Live demo: [GH-pages](#)_
 
-Test: It should take string output and showcase its value in the <p> #input and remove the 'hidden' class.
-Code: 
-Expected Output: <div id="display-div" class="inside-form">
+## Technologies Used
 
-Test: It should pop an error message if submitted without setting a number.
-Code: 
-Expected Output: error message.
+* _HTML_
+* _CSS_
+* _JavaScript_
+
+## Description
+
+_This project is an interactive web application that involves receiving an input from the user (number) and returning a list of values from 0 to the inputted number, with specific substitutions made based on the conditions outlined below.
+It has a user-friendly interface, including a field for users to input their preferred number. The application should also handle exceptions where the user doesn't input a valid number.
+Upon receiving the user's input, the application will generate a list of numbers starting from 0 up to the user's input.
+ * If a number contains a '1', it will be replaced entirely with "Beep!" regardless of the other digits in the number.
+ * If a number contains a '2' but no '1', it will be replaced entirely with "Boop!"
+ * If a number contains a '3' but no '1' or '2', it will be replaced entirely with "Won't you be my neighbor?".
+ The user can reverse the output by clicking a button.
+ Once the substitutions have been made, the application will return and display the new list of values to the user with an option to reverse the list and display it from end to start._
+
+## Setup/Installation Requirements
+
+* _Clone this repository to your local machine._
+* _Navigate to the project directory._
+* _Open the index.html file in a web browser._
+* _Answer one or more of the questions._
+
+## Known Bugs
+
+_2 known bugs:
+* 1. The 'revered' result does not updates automaticcly upon a new 'submit' click (only manually) 
+* 2. When the result has more than 14 instances to display at the 'reverse' section it will overflow outside of the container_
+
+## License
+
+[MIT License](https://choosealicense.com/licenses/mit/)
+
+Copyright (c) 2023 Moshe Atia Poston
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
