@@ -34,8 +34,8 @@ Once the substitutions have been made, the application will return and display t
 ## Known Bugs
 
 2 known bugs:
-*1. The 'revered' result does not updates automaticcly upon a new 'submit' click (only manually)_
-*2. When the result has more than 14 instances to display at the 'reverse' section it will overflow outside of the container.
+* 1. The 'revered' result does not updates automaticcly upon a new 'submit' click (only manually)_
+* 2. When the result has more than 14 instances to display at the 'reverse' section it will overflow outside of the container.
 
 ## License
 
